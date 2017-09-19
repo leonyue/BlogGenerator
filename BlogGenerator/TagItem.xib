@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TagItem">
+            <connections>
+                <outlet property="label" destination="w23-pj-RyZ" id="VGm-Xe-6ph"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="17"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w23-pj-RyZ">
+                    <rect key="frame" x="-2" y="0.0" width="451" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="wiA-oK-epO">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="bVZ-66-VWl">
+                    <rect key="frame" x="430" y="0.0" width="17" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bVZ-66-VWl" secondAttribute="height" multiplier="1:1" id="ff6-tX-tep"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="delete" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="oEY-AB-fLg">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="deleteClick:" target="-2" id="JS8-n8-Kaw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="w23-pj-RyZ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Pi3-a2-eMl"/>
+                <constraint firstAttribute="trailing" secondItem="w23-pj-RyZ" secondAttribute="trailing" id="d2V-0G-d4y"/>
+                <constraint firstItem="bVZ-66-VWl" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="dl7-Oc-5zg"/>
+                <constraint firstItem="bVZ-66-VWl" firstAttribute="height" secondItem="Hz6-mo-xeY" secondAttribute="height" id="f6g-eK-5TW"/>
+                <constraint firstItem="w23-pj-RyZ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="n6S-0E-Dlt"/>
+                <constraint firstAttribute="bottom" secondItem="w23-pj-RyZ" secondAttribute="bottom" id="n9v-Px-Weg"/>
+                <constraint firstAttribute="trailing" secondItem="bVZ-66-VWl" secondAttribute="trailing" id="w7j-oH-mkC"/>
+            </constraints>
+            <point key="canvasLocation" x="-20.5" y="257"/>
+        </customView>
+        <collectionViewItem id="sod-li-CiO" customClass="TagItem">
+            <connections>
+                <outlet property="sourceItemView" destination="Hz6-mo-xeY" id="9CQ-nZ-t97"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+    <resources>
+        <image name="delete" width="32" height="32"/>
+    </resources>
+</document>

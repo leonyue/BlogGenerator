@@ -12,6 +12,9 @@
 		1BD4C1931F70B8EB009A1EB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD4C1921F70B8EB009A1EB8 /* ViewController.m */; };
 		1BD4C1951F70B8EC009A1EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD4C1941F70B8EC009A1EB8 /* Assets.xcassets */; };
 		1BD4C1981F70B8EC009A1EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD4C1961F70B8EC009A1EB8 /* Main.storyboard */; };
+		1BD4C1A11F70BC0A009A1EB8 /* TagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD4C1A01F70BC0A009A1EB8 /* TagViewController.m */; };
+		1BD4C1B41F70C4A6009A1EB8 /* TagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD4C1B21F70C4A6009A1EB8 /* TagItem.m */; };
+		1BD4C1B51F70C4A6009A1EB8 /* TagItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BD4C1B31F70C4A6009A1EB8 /* TagItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		1BD4C1941F70B8EC009A1EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BD4C1971F70B8EC009A1EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BD4C1991F70B8EC009A1EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD4C19F1F70BC0A009A1EB8 /* TagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagViewController.h; sourceTree = "<group>"; };
+		1BD4C1A01F70BC0A009A1EB8 /* TagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagViewController.m; sourceTree = "<group>"; };
+		1BD4C1B11F70C4A6009A1EB8 /* TagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagItem.h; sourceTree = "<group>"; };
+		1BD4C1B21F70C4A6009A1EB8 /* TagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagItem.m; sourceTree = "<group>"; };
+		1BD4C1B31F70C4A6009A1EB8 /* TagItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,11 @@
 				1BD4C18C1F70B8EB009A1EB8 /* AppDelegate.m */,
 				1BD4C1911F70B8EB009A1EB8 /* ViewController.h */,
 				1BD4C1921F70B8EB009A1EB8 /* ViewController.m */,
+				1BD4C19F1F70BC0A009A1EB8 /* TagViewController.h */,
+				1BD4C1A01F70BC0A009A1EB8 /* TagViewController.m */,
+				1BD4C1B11F70C4A6009A1EB8 /* TagItem.h */,
+				1BD4C1B21F70C4A6009A1EB8 /* TagItem.m */,
+				1BD4C1B31F70C4A6009A1EB8 /* TagItem.xib */,
 				1BD4C1941F70B8EC009A1EB8 /* Assets.xcassets */,
 				1BD4C1961F70B8EC009A1EB8 /* Main.storyboard */,
 				1BD4C1991F70B8EC009A1EB8 /* Info.plist */,
@@ -137,6 +150,7 @@
 			files = (
 				1BD4C1951F70B8EC009A1EB8 /* Assets.xcassets in Resources */,
 				1BD4C1981F70B8EC009A1EB8 /* Main.storyboard in Resources */,
+				1BD4C1B51F70C4A6009A1EB8 /* TagItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BD4C1931F70B8EB009A1EB8 /* ViewController.m in Sources */,
+				1BD4C1A11F70BC0A009A1EB8 /* TagViewController.m in Sources */,
 				1BD4C1901F70B8EB009A1EB8 /* main.m in Sources */,
 				1BD4C18D1F70B8EB009A1EB8 /* AppDelegate.m in Sources */,
+				1BD4C1B41F70C4A6009A1EB8 /* TagItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
