@@ -45,12 +45,12 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="-282"/>
+            <point key="canvasLocation" x="8" y="-397"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="WindowController" sceneMemberID="viewController">
                     <window key="window" title="Blog编辑器" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -60,17 +60,14 @@
                         <value key="maxSize" type="size" width="800" height="600"/>
                         <toolbar key="toolbar" implicitIdentifier="33083AD4-FC11-4265-A0E0-CC6884D3CBC3" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="MoO-bh-R2C">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="lVe-ZB-zGV"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="1T8-SE-GY7"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="ds3-4n-1wl"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="IJq-zA-PXS"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="cqM-1j-1TE"/>
+                                <toolbarItem implicitItemIdentifier="DDB45ADB-F1B7-48D6-99CB-324F056F9199" label="Insert Image" paletteLabel="Insert Image" tag="-1" image="image" id="4qh-4e-aXf">
+                                    <connections>
+                                        <action selector="insertImageClick:" target="B8D-0N-5wS" id="leP-dd-yWq"/>
+                                    </connections>
+                                </toolbarItem>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
-                                <toolbarItem reference="lVe-ZB-zGV"/>
-                                <toolbarItem reference="1T8-SE-GY7"/>
-                                <toolbarItem reference="cqM-1j-1TE"/>
-                                <toolbarItem reference="ds3-4n-1wl"/>
+                                <toolbarItem reference="4qh-4e-aXf"/>
                             </defaultToolbarItems>
                         </toolbar>
                     </window>
@@ -80,7 +77,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7" y="43"/>
+            <point key="canvasLocation" x="210" y="51"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -231,4 +228,7 @@
             <point key="canvasLocation" x="780" y="189"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image" width="32" height="32"/>
+    </resources>
 </document>
